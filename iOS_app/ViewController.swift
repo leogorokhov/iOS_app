@@ -79,9 +79,4 @@ final class ViewController: UIViewController, UITableViewDataSource {
 }
 
 
-struct FoodDTO: Decodable {
-    let id: Int
-    let name: String
-    let description: String
-    let thumbnail_url: URL
-}
+
