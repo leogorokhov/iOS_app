@@ -78,9 +78,6 @@ final class ViewController: UIViewController, UITableViewDataSource {
     }
 }
 
-struct Root : Decodable {
-    let results : [FoodDTO]
-}
 
 struct FoodDTO: Decodable {
     let id: Int
