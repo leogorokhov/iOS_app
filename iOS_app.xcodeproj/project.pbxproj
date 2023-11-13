@@ -17,6 +17,7 @@
 		D8F7C0B92B023EAE00DB7A4E /* FoodDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7C0B82B023EAE00DB7A4E /* FoodDTO.swift */; };
 		D8F7C0BB2B023F5100DB7A4E /* FoodService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7C0BA2B023F5100DB7A4E /* FoodService.swift */; };
 		D8F7C0BD2B02421100DB7A4E /* FoodTableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7C0BC2B02421100DB7A4E /* FoodTableManager.swift */; };
+		D8F7C0BF2B0243F800DB7A4E /* FoodTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7C0BE2B0243F800DB7A4E /* FoodTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		D8F7C0B82B023EAE00DB7A4E /* FoodDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDTO.swift; sourceTree = "<group>"; };
 		D8F7C0BA2B023F5100DB7A4E /* FoodService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodService.swift; sourceTree = "<group>"; };
 		D8F7C0BC2B02421100DB7A4E /* FoodTableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableManager.swift; sourceTree = "<group>"; };
+		D8F7C0BE2B0243F800DB7A4E /* FoodTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableView.swift; sourceTree = "<group>"; };
 		E4D236F934305A206941D917 /* Pods-iOS_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_app.release.xcconfig"; path = "Target Support Files/Pods-iOS_app/Pods-iOS_app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 				D8F7C0B82B023EAE00DB7A4E /* FoodDTO.swift */,
 				D8F7C0BA2B023F5100DB7A4E /* FoodService.swift */,
 				D8F7C0BC2B02421100DB7A4E /* FoodTableManager.swift */,
+				D8F7C0BE2B0243F800DB7A4E /* FoodTableView.swift */,
 			);
 			path = FoodTable;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8A2E6CA2AD417BB00FA9340 /* ViewController.swift in Sources */,
+				D8F7C0BF2B0243F800DB7A4E /* FoodTableView.swift in Sources */,
 				D8F7C0BB2B023F5100DB7A4E /* FoodService.swift in Sources */,
 				D8F7C0B72B023E9400DB7A4E /* Root.swift in Sources */,
 				D8A2E6C62AD417BB00FA9340 /* AppDelegate.swift in Sources */,
