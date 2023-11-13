@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 final class FoodTableView: UIView {
     private lazy var tableManager = FoodTableManager()
