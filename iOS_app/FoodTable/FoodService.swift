@@ -7,6 +7,10 @@
 
 import Foundation
 
+protocol FoodServicing: AnyObject {
+    func fetchFood(completionHandler: @escaping (Root) -> Void)
+}
+
 final class FoodService {
     
     let decoder = JSONDecoder()
@@ -15,7 +19,11 @@ final class FoodService {
         let session = URLSession(configuration: sessionConfiguration)
         return session
     }()
-    
+}
+
+// MARK: - FoodServicing
+
+extension FoodService: FoodServicing {
     func fetchFood(completionHandler: @escaping (Root) -> Void) {
         let headers = [
             "X-RapidAPI-Key": "1645d81122msha1fdaae7ea346dfp175a2ajsnec8c6bc90f73",
@@ -43,3 +51,4 @@ final class FoodService {
         }).resume()
     }
 }
+

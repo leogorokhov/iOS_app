@@ -11,14 +11,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        
-        let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = ViewController()
-        window.makeKeyAndVisible()
-        self.window = window
+        guard let windowScene = (scene as? UIWindowScene) else {
+            return } // создаем сцену
+      
+        let window = UIWindow(windowScene: windowScene) // создаем окно
+        let factory = FoodTableViewControllerFactory()
+        let viewController = factory.build() // создаем контроллер
+        window.rootViewController = viewController // делаем его главным
+        window.makeKeyAndVisible() // делаем его ключевым и видимым
+        self.window = window // говорим, что это тот самый window вне функции
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
